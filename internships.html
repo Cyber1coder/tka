@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Incubator Portal | The Kiran Academy (TKA)</title>
+  <meta name="description" content="Apply for real-world software engineering, Java, Python, Web Dev, and Testing internships with stipends at TKA hiring partners.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="internships.html" class="nav-link active">Internships</a>
+        <a href="placements.html" class="nav-link">Placements</a>
+        <a href="mock-tests.html" class="nav-link">Mock Tests</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="auth-nav-container">
+          <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+          <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </div>
+      <button class="drawer-close">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="courses.html" class="nav-link">Courses</a>
+      <a href="internships.html" class="nav-link active">Internships</a>
+      <a href="placements.html" class="nav-link">Placements</a>
+      <a href="mock-tests.html" class="nav-link">Mock Tests</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="dashboard.html" class="nav-link">Student Portal</a>
+    </nav>
+  </div>
+
+  <!-- Hero Banner -->
+  <section class="section-padding" style="background: radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.08) 0%, transparent 50%); padding-bottom: 2rem;">
+    <div class="container text-center" style="text-align: center;">
+      <span class="section-subtitle"><i class="fa-solid fa-briefcase"></i> Industry Launchpad</span>
+      <h1 class="section-title">TKA Internship Opportunities</h1>
+      <p class="section-desc" style="max-width: 700px; margin: 0 auto;">
+        Bridge the gap between academics and industry. Gain real hands-on experience, earn stipends, and fast-track your PPO software job offer.
+      </p>
+    </div>
+  </section>
+
+  <!-- Internships Filtering & Grid -->
+  <section class="section-padding" style="padding-top: 1rem;">
+    <div class="container">
+      
+      <!-- Category Filter -->
+      <div class="course-filters-bar" style="justify-content: center;">
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-intern-category="All">All Categories</button>
+          <button class="tab-btn" data-intern-category="Web Development">Web Development</button>
+          <button class="tab-btn" data-intern-category="Java Development">Java Development</button>
+          <button class="tab-btn" data-intern-category="Data Analytics">Data Analytics</button>
+          <button class="tab-btn" data-intern-category="Software Testing">Software Testing</button>
+        </div>
+      </div>
+
+      <!-- Internship Cards Container -->
+      <div class="internships-grid" id="internshipsContainer">
+        <!-- Rendered by js/internships.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon-box">TKA</div>
+            <div class="logo-text" style="color: #fff;">The Kiran <span>Academy</span></div>
+          </a>
+          <p class="footer-brand-desc">
+            Empowering students with industry internships and job-oriented coaching.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="internships.html">Internships</a>
+            <a href="placements.html">Placements</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Student Portal</h4>
+          <div class="footer-links">
+            <a href="dashboard.html">My Applications</a>
+            <a href="mock-tests.html">Practice Tests</a>
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-links" style="font-size: 0.85rem;">
+            <div>Karve Nagar, Pune, MS 411052</div>
+            <div>Ph: +91 90280 88967</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Kiran Academy (TKA). Demo Internship Portal.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/internships.js"></script>
+</body>
+</html>

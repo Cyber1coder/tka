@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login | The Kiran Academy (TKA)</title>
+  <meta name="description" content="Sign in to your TKA student account to access enrolled courses, mock test results, and internship application status.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="internships.html" class="nav-link">Internships</a>
+        <a href="placements.html" class="nav-link">Placements</a>
+        <a href="mock-tests.html" class="nav-link">Mock Tests</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login Main Container -->
+  <div class="auth-page-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="logo-icon-box" style="margin: 0 auto 1rem auto; width: 52px; height: 52px; font-size: 1.5rem;">TKA</div>
+        <h1 class="auth-title">Welcome Back</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Sign in to your Student Portal account</p>
+      </div>
+
+      <div style="background: var(--primary-light); border: 1px solid rgba(37,99,235,0.2); border-radius: var(--radius-md); padding: 0.85rem 1rem; margin-bottom: 1.5rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: var(--primary); font-weight: 600;">Demo Login Preview</span>
+        <div style="margin-top: 0.5rem;">
+          <button type="button" onclick="fillDemoCredentials()" class="btn btn-secondary btn-sm" style="width: 100%;">
+            <i class="fa-solid fa-magic-wand-sparkles"></i> Auto-fill Demo Student Login
+          </button>
+        </div>
+      </div>
+
+      <form id="tkaLoginForm">
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" id="loginEmail" class="form-control" required placeholder="student@example.com">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Password *</label>
+          <div class="password-input-wrap">
+            <input type="password" id="loginPassword" class="form-control" required placeholder="••••••••">
+            <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility('loginPassword', this)">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; font-size: 0.875rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+            <input type="checkbox" checked> Remember me
+          </label>
+          <a href="javascript:void(0)" onclick="showToast('Demo Mode: Click Auto-fill to test login', 'info')">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          Sign In <i class="fa-solid fa-right-to-bracket"></i>
+        </button>
+      </form>
+
+      <div style="text-align: center; margin-top: 1.75rem; font-size: 0.9rem; color: var(--text-muted);">
+        Don't have an account yet? <a href="register.html" style="font-weight: 700;">Create Account</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

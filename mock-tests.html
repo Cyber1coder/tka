@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Mock Test Series | The Kiran Academy (TKA)</title>
+  <meta name="description" content="Practice online mock tests for Java, Python, DSA, Aptitude, DBMS, and Systems with timer, automated scoring, and detailed solutions.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="internships.html" class="nav-link">Internships</a>
+        <a href="placements.html" class="nav-link">Placements</a>
+        <a href="mock-tests.html" class="nav-link active">Mock Tests</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="auth-nav-container">
+          <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+          <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </div>
+      <button class="drawer-close">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="courses.html" class="nav-link">Courses</a>
+      <a href="internships.html" class="nav-link">Internships</a>
+      <a href="placements.html" class="nav-link">Placements</a>
+      <a href="mock-tests.html" class="nav-link active">Mock Tests</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="dashboard.html" class="nav-link">Student Portal</a>
+    </nav>
+  </div>
+
+  <!-- Main Container App Container -->
+  <div id="testMainApp">
+    <!-- Hero Header -->
+    <section class="section-padding" style="background: radial-gradient(circle at 50% 0%, rgba(37,99,235,0.08) 0%, transparent 60%); padding-bottom: 2rem;">
+      <div class="container text-center" style="text-align: center;">
+        <span class="section-subtitle"><i class="fa-solid fa-laptop-code"></i> Real Exam Simulation</span>
+        <h1 class="section-title">Online Mock Test Series</h1>
+        <p class="section-desc" style="max-width: 650px; margin: 0 auto;">
+          Test your speed, accuracy, and technical knowledge across IT recruitment subjects with automated score calculation & solution breakdowns.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mock Tests List Section -->
+    <section class="section-padding" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="courses-grid" id="mockTestsList">
+          <!-- Rendered by js/mock-tests.js -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon-box">TKA</div>
+            <div class="logo-text" style="color: #fff;">The Kiran <span>Academy</span></div>
+          </a>
+          <p class="footer-brand-desc">
+            Real-time testing & interview practice portal.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="internships.html">Internships</a>
+            <a href="placements.html">Placements</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Student Portal</h4>
+          <div class="footer-links">
+            <a href="dashboard.html">Test History</a>
+            <a href="dashboard.html">My Scores</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-links" style="font-size: 0.85rem;">
+            <div>Karve Nagar, Pune, MS 411052</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Kiran Academy (TKA). Mock Test Engine.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/mock-tests.js"></script>
+</body>
+</html>

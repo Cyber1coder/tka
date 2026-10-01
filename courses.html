@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses & Training Programs | The Kiran Academy (TKA)</title>
+  <meta name="description" content="Explore Java, Python, DSA, MERN Stack, Software Testing, GATE CS, and Aptitude courses with live projects and placement assistance.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="announcement-content">
+      <span class="announcement-badge">SCHOLARSHIP</span>
+      <span>🎓 Up to 30% Early Bird Scholarship for Upcoming Oct 2026 Batches!</span>
+    </div>
+    <button onclick="dismissAnnouncement()" class="announcement-close">&times;</button>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link active">Courses</a>
+        <a href="internships.html" class="nav-link">Internships</a>
+        <a href="placements.html" class="nav-link">Placements</a>
+        <a href="mock-tests.html" class="nav-link">Mock Tests</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="auth-nav-container">
+          <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+          <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </div>
+      <button class="drawer-close">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="courses.html" class="nav-link active">Courses</a>
+      <a href="internships.html" class="nav-link">Internships</a>
+      <a href="placements.html" class="nav-link">Placements</a>
+      <a href="mock-tests.html" class="nav-link">Mock Tests</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="dashboard.html" class="nav-link">Student Portal</a>
+    </nav>
+  </div>
+
+  <!-- Page Header -->
+  <section class="section-padding" style="background: radial-gradient(circle at 50% 0%, rgba(37,99,235,0.08) 0%, transparent 60%); padding-bottom: 2rem;">
+    <div class="container text-center" style="text-align: center;">
+      <span class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> Complete Curriculum</span>
+      <h1 class="section-title">Explore All Professional Courses</h1>
+      <p class="section-desc" style="max-width: 650px; margin: 0 auto;">
+        Filter by subject, difficulty, or search by keywords to find the ideal career track for your goals.
+      </p>
+    </div>
+  </section>
+
+  <!-- Courses Filter & Display Section -->
+  <section class="section-padding" style="padding-top: 1rem;">
+    <div class="container">
+      
+      <!-- Filters Toolbar -->
+      <div class="course-filters-bar">
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-category="All">All Courses</button>
+          <button class="tab-btn" data-category="Java">Java</button>
+          <button class="tab-btn" data-category="Python">Python</button>
+          <button class="tab-btn" data-category="DSA">DSA</button>
+          <button class="tab-btn" data-category="Full Stack">Full Stack</button>
+          <button class="tab-btn" data-category="Testing">Testing</button>
+          <button class="tab-btn" data-category="GATE">GATE CS</button>
+          <button class="tab-btn" data-category="Aptitude">Aptitude</button>
+        </div>
+
+        <div class="search-sort-group">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="courseSearchInput" placeholder="Search courses...">
+          </div>
+
+          <select id="courseSortSelect" class="select-box">
+            <option value="popular">Sort by: Popularity</option>
+            <option value="rating">Sort by: Rating</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="courses-grid" id="coursesContainer">
+        <!-- Rendered by js/courses.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon-box">TKA</div>
+            <div class="logo-text" style="color: #fff;">The Kiran <span>Academy</span></div>
+          </a>
+          <p class="footer-brand-desc">
+            Industry-oriented software coaching & career advancement institute.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="internships.html">Internships</a>
+            <a href="placements.html">Placements</a>
+            <a href="mock-tests.html">Mock Tests</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="dashboard.html">Student Portal</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Address</h4>
+          <div class="footer-links" style="font-size: 0.85rem;">
+            <div>Karve Nagar, Pune, MS 411052</div>
+            <div>Ph: +91 90280 88967</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Kiran Academy (TKA). All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+</html>

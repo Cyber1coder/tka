@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kiran Academy (TKA) | Build Skills, Crack Your Goals</title>
+  <meta name="description" content="Leading coaching institute for Java Full Stack, Python, DSA, Software Testing, GATE CS, and IT placement preparation in Pune.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="announcement-content">
+      <span class="announcement-badge">NEW BATCH</span>
+      <span>🚀 Admissions Open for Full Stack Java & Python Fast-Track Batches!</span>
+      <a href="courses.html" class="announcement-link">Explore Batches <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <button onclick="dismissAnnouncement()" class="announcement-close" aria-label="Dismiss Announcement">&times;</button>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="internships.html" class="nav-link">Internships</a>
+        <a href="placements.html" class="nav-link">Placements</a>
+        <a href="mock-tests.html" class="nav-link">Mock Tests</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="auth-nav-container">
+          <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+          <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </div>
+      <button class="drawer-close">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="courses.html" class="nav-link">Courses</a>
+      <a href="internships.html" class="nav-link">Internships</a>
+      <a href="placements.html" class="nav-link">Placements</a>
+      <a href="mock-tests.html" class="nav-link">Mock Tests</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="dashboard.html" class="nav-link">Student Portal</a>
+    </nav>
+    <div style="margin-top: 2rem;">
+      <a href="login.html" class="btn btn-primary btn-block">Sign In / Register</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-sparkles"></i> ISO 9001:2015 Certified Coaching Institute
+        </div>
+        <h1 class="hero-title">
+          Build Your Skills. <br>
+          <span class="gradient-text">Crack Your Goals.</span>
+        </h1>
+        <p class="hero-desc">
+          Master in-demand tech stack, practice with industry-standard mock tests, gain real-world internship experience, and land top IT placement offers.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="courses.html" class="btn btn-primary btn-lg">
+            Explore Courses <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="mock-tests.html" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-laptop-code"></i> Take Free Mock Test
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <i class="fa-solid fa-circle-check"></i> 100% Placement Assistance
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-circle-check"></i> 1-on-1 Mentor Guidance
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-circle-check"></i> Live Capstone Projects
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Box -->
+      <div class="hero-visual-wrapper">
+        <div class="hero-main-card">
+          <div class="visual-header">
+            <div class="visual-header-title">
+              <span class="visual-live-dot"></span> Live Interactive Classroom
+            </div>
+            <span class="badge badge-success">Active Batch</span>
+          </div>
+
+          <div style="position: relative; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.5rem;">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Students Learning Coding at TKA" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="position: absolute; bottom: 10px; left: 10px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; padding: 0.4rem 0.8rem; border-radius: var(--radius-sm); font-size: 0.8rem;">
+              <i class="fa-solid fa-code"></i> Java & React Live Coding Session
+            </div>
+          </div>
+
+          <div class="visual-stats-grid">
+            <div class="v-stat-card">
+              <div class="v-stat-num">50,000+</div>
+              <div class="v-stat-label">Students Trained</div>
+            </div>
+            <div class="v-stat-card">
+              <div class="v-stat-num">350+</div>
+              <div class="v-stat-label">Hiring Partners</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Cards -->
+        <div class="hero-floating-card card-top">
+          <div class="fc-icon green"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="fc-text">
+            <h5>Highest Package</h5>
+            <p>₹18.5 LPA (Product Co)</p>
+          </div>
+        </div>
+
+        <div class="hero-floating-card card-bottom">
+          <div class="fc-icon blue"><i class="fa-solid fa-certificate"></i></div>
+          <div class="fc-text">
+            <h5>Industry Certified</h5>
+            <p>Recognized Credentials</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact & Counter Section -->
+  <section class="stats-counter-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="50000" data-suffix="+">0</div>
+          <div class="stat-title">Students Trained</div>
+          <div class="stat-sub">Across Pune & Online</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number" data-target="94" data-suffix="%">0</div>
+          <div class="stat-title">Placement Success Rate</div>
+          <div class="stat-sub">Consistent Record</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number" data-target="350" data-suffix="+">0</div>
+          <div class="stat-title">Hiring Companies</div>
+          <div class="stat-sub">MNCs & Fast-growing Startups</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number" data-target="8.5" data-suffix=" LPA" data-prefix="₹">0</div>
+          <div class="stat-title">Average Package</div>
+          <div class="stat-sub">For Trained Freshers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Courses Preview Section -->
+  <section class="section-padding" style="background: var(--bg-body);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-book-open"></i> Career Tracks</span>
+        <h2 class="section-title">Explore Our Popular Programs</h2>
+        <p class="section-desc">Designed by tech industry veterans to transform beginners into job-ready software engineers.</p>
+      </div>
+
+      <div class="courses-grid" id="coursesContainer">
+        <!-- Dynamically rendered by js/courses.js -->
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="courses.html" class="btn btn-outline btn-lg">
+          View All Courses <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose TKA Section -->
+  <section class="section-padding" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-shield-halved"></i> TKA Advantage</span>
+        <h2 class="section-title">Why Choose The Kiran Academy?</h2>
+        <p class="section-desc">We go beyond traditional classroom teaching to provide holistic career transformation.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <h3 class="feature-title">Live Interactive Classes</h3>
+          <p class="feature-desc">Engage in real-time interactive lectures led by experienced industry mentors with instant query resolution.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-code-commit"></i></div>
+          <h3 class="feature-title">Hands-On Live Projects</h3>
+          <p class="feature-desc">Build production-grade web apps, microservices, and databases to display on your GitHub portfolio.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-user-tie"></i></div>
+          <h3 class="feature-title">Dedicated Placement Cell</h3>
+          <p class="feature-desc">Unlimited interview calls, daily placement drives, resume building, and ATS keyword optimization.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-comments"></i></div>
+          <h3 class="feature-title">1-on-1 Mock Interviews</h3>
+          <p class="feature-desc">Practice technical and HR interview rounds with real hiring managers to eliminate stage fear.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3 class="feature-title">Online Practice Portal</h3>
+          <p class="feature-desc">Access 500+ coding challenges, subject-wise mock tests, and instant automated evaluation anytime.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <h3 class="feature-title">Lifetime LMS Access</h3>
+          <p class="feature-desc">Revisit class recordings, study notes, interview cheat-sheets, and code repositories whenever needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship Preview Banner -->
+  <section class="section-padding" style="background: var(--bg-body);">
+    <div class="container">
+      <div class="placement-banner" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+        <div class="placement-banner-grid">
+          <div>
+            <span class="badge badge-warning" style="margin-bottom: 1rem;">INTERNSHIP INCUBATOR</span>
+            <h2>Gain Real Industry Experience</h2>
+            <p>Work on actual enterprise software projects, earn monthly stipends, and secure direct PPO (Pre-Placement Offer) conversions.</p>
+            <a href="internships.html" class="btn btn-accent btn-lg">
+              Explore Internship Listings <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+              <i class="fa-solid fa-money-bill-wave" style="font-size: 2rem; color: var(--accent); margin-bottom: 0.5rem;"></i>
+              <h4 style="color: #fff; font-size: 1.1rem;">Up to ₹25,000/mo</h4>
+              <p style="color: #94a3b8; font-size: 0.85rem;">Competitive Stipends</p>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+              <i class="fa-solid fa-building-user" style="font-size: 2rem; color: var(--success); margin-bottom: 0.5rem;"></i>
+              <h4 style="color: #fff; font-size: 1.1rem;">Hybrid & Remote</h4>
+              <p style="color: #94a3b8; font-size: 0.85rem;">Flexible Learning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Hiring Partners & Placement Stories -->
+  <section class="section-padding" style="background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-trophy"></i> Career Outcomes</span>
+        <h2 class="section-title">Where Our Alumni Work</h2>
+        <p class="section-desc">Sample recruiter partner network & student success stories (Illustrative Demo Figures).</p>
+      </div>
+
+      <div class="recruiters-marquee">
+        <div class="recruiter-chip">TCS</div>
+        <div class="recruiter-chip">Infosys</div>
+        <div class="recruiter-chip">Wipro</div>
+        <div class="recruiter-chip">Capgemini</div>
+        <div class="recruiter-chip">Tech Mahindra</div>
+        <div class="recruiter-chip">Cognizant</div>
+        <div class="recruiter-chip">Accenture</div>
+        <div class="recruiter-chip">Persistent</div>
+      </div>
+
+      <!-- Testimonial Grid -->
+      <div class="testimonials-grid" style="margin-top: 4rem;">
+        <div class="testimonial-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "The Kiran Academy transformed my coding confidence. Kiran Sir's deep Java explanations and the mock interview sessions helped me crack TCS Digital with 7.5 LPA!"
+          </p>
+          <div class="student-info">
+            <div class="student-avatar" style="background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700;">AP</div>
+            <div class="student-details">
+              <h5>Aditya Patil</h5>
+              <p>Software Engineer at TCS (Batch 2025)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "The Python & Data Analytics course gave me practical hands-on experience with Pandas and SQL. I applied for an internship via the TKA portal and converted it to full-time!"
+          </p>
+          <div class="student-info">
+            <div class="student-avatar" style="background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700;">ND</div>
+            <div class="student-details">
+              <h5>Neha Deshmukh</h5>
+              <p>Data Analyst at Infosys (Batch 2025)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Regular DSA problem solving and Aptitude mock test practice made all campus drives feel easy. I secured offers from 3 top MNCs in my final semester!"
+          </p>
+          <div class="student-info">
+            <div class="student-avatar" style="background: var(--success); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700;">RS</div>
+            <div class="student-details">
+              <h5>Rohan Shinde</h5>
+              <p>Java Backend Dev at Capgemini</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="section-padding" style="background: var(--bg-body);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-circle-question"></i> Help Center</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Got questions about admissions, batches, or placements? We have answers.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <div class="faq-header">
+            <span>What are the batch timings for offline and online classes?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-body">
+            We offer flexible morning (8:00 AM - 11:00 AM), afternoon (2:00 PM - 5:00 PM), and evening (6:30 PM - 9:00 PM) batches for both online live classes and offline classroom sessions in Pune.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>Do non-IT or non-CS students get placement support?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-body">
+            Yes! Over 40% of our successful alumni come from Mechanical, ENTC, Civil, and Commerce backgrounds. Our foundational modules start from scratch and equip you with solid coding skills.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>How does the Mock Test and Placement module work?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-body">
+            Our interactive Mock Test module provides real exam simulation with instant evaluation, score breakdown, and answer reviews. Students eligible for placement drives must pass subject benchmark tests.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>Can I pay course fees in installments?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-body">
+            Yes, we offer flexible no-cost EMI and installment options to ensure financial ease for all students.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="section-padding" style="background: var(--primary-gradient); color: #ffffff;">
+    <div class="container" style="text-align: center; max-width: 700px;">
+      <h2 style="font-size: 2.25rem; color: #fff; margin-bottom: 1rem;">Stay Updated with Free Test Series & Batches</h2>
+      <p style="color: #dbeafe; font-size: 1.05rem; margin-bottom: 2rem;">
+        Subscribe to receive weekly programming cheat-sheets, mock test links, and job openings directly in your inbox.
+      </p>
+
+      <form onsubmit="event.preventDefault(); showToast('Thank you for subscribing!', 'success'); this.reset();" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <input type="email" required placeholder="Enter your email address..." style="flex-grow: 1; padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border: none; font-size: 1rem; outline: none;">
+        <button type="submit" class="btn btn-accent btn-lg" style="white-space: nowrap;">
+          Subscribe Now <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon-box">TKA</div>
+            <div class="logo-text" style="color: #fff;">The Kiran <span>Academy</span></div>
+          </a>
+          <p class="footer-brand-desc">
+            Empowering tech aspirants with practical skills, real-world projects, and placement assistance.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="courses.html">All Courses</a>
+            <a href="internships.html">Internship Portal</a>
+            <a href="placements.html">Placements</a>
+            <a href="mock-tests.html">Mock Test Series</a>
+            <a href="dashboard.html">Student Portal</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Popular Courses</h4>
+          <div class="footer-links">
+            <a href="courses.html">Java Full Stack</a>
+            <a href="courses.html">Python Data Science</a>
+            <a href="courses.html">Data Structures (DSA)</a>
+            <a href="courses.html">Software Testing</a>
+            <a href="courses.html">GATE CS Coaching</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="footer-links" style="font-size: 0.9rem;">
+            <div><i class="fa-solid fa-location-dot" style="color: var(--primary); margin-right: 0.5rem;"></i> Karve Nagar, Pune, Maharashtra 411052</div>
+            <div><i class="fa-solid fa-phone" style="color: var(--primary); margin-right: 0.5rem;"></i> +91 90280 88967</div>
+            <div><i class="fa-solid fa-envelope" style="color: var(--primary); margin-right: 0.5rem;"></i> info@thekiranacademy.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Kiran Academy (TKA). All rights reserved.</div>
+        <div class="disclaimer-notice">
+          Disclaimer: This website is a frontend project implementation. All statistics, placement records, and company logos are provided as sample demo figures for presentation.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+
+</body>
+</html>

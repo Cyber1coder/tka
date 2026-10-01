@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placements & Career Support | The Kiran Academy (TKA)</title>
+  <meta name="description" content="TKA Placement Cell: Career preparation roadmap, hiring partners, student success stories, and interview prep resources.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="internships.html" class="nav-link">Internships</a>
+        <a href="placements.html" class="nav-link active">Placements</a>
+        <a href="mock-tests.html" class="nav-link">Mock Tests</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="auth-nav-container">
+          <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+          <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-icon-box">TKA</div>
+        <div class="logo-text">The Kiran <span>Academy</span></div>
+      </div>
+      <button class="drawer-close">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="courses.html" class="nav-link">Courses</a>
+      <a href="internships.html" class="nav-link">Internships</a>
+      <a href="placements.html" class="nav-link active">Placements</a>
+      <a href="mock-tests.html" class="nav-link">Mock Tests</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="dashboard.html" class="nav-link">Student Portal</a>
+    </nav>
+  </div>
+
+  <!-- Hero Banner -->
+  <section class="section-padding" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="section-subtitle" style="background: rgba(37,99,235,0.2); border-color: rgba(37,99,235,0.4);"><i class="fa-solid fa-trophy"></i> Dedicated Placement Cell</span>
+      <h1 class="section-title" style="color: #fff; font-size: 2.75rem;">Your Pathway to Top IT Careers</h1>
+      <p style="color: #94a3b8; font-size: 1.15rem; margin-bottom: 2rem;">
+        From fundamental coding concepts to final HR negotiations, we guide you at every single step of your IT placement journey.
+      </p>
+
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="courses.html" class="btn btn-primary btn-lg">Explore Career Tracks</a>
+        <button onclick="openResourceModal()" class="btn btn-outline btn-lg" style="color: #fff; border-color: #fff;">
+          <i class="fa-solid fa-file-pdf"></i> Placement Prep Checklist
+        </button>
+      </div>
+      
+      <div style="margin-top: 1.5rem; font-size: 0.8rem; color: #64748b;">
+        * Notice: Figures & placement statistics presented below serve as illustrative sample data.
+      </div>
+    </div>
+  </section>
+
+  <!-- Placement Stats Banner -->
+  <section class="stats-counter-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="94" data-suffix="%">0</div>
+          <div class="stat-title">Placement Success Rate</div>
+          <div class="stat-sub">Batch Average</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="350" data-suffix="+">0</div>
+          <div class="stat-title">Recruitment Partners</div>
+          <div class="stat-sub">IT Companies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="18.5" data-suffix=" LPA" data-prefix="₹">0</div>
+          <div class="stat-title">Highest Package</div>
+          <div class="stat-sub">Product Track</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="8.5" data-suffix=" LPA" data-prefix="₹">0</div>
+          <div class="stat-title">Average Package</div>
+          <div class="stat-sub">Full Stack Engineers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-Step Career Preparation Roadmap -->
+  <section class="section-padding" style="background: var(--bg-body);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-map-location-dot"></i> Proven Methodology</span>
+        <h2 class="section-title">4-Phase Placement Preparation Roadmap</h2>
+        <p class="section-desc">Our structured 4-step framework ensures guaranteed interview readiness.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper" style="background: var(--primary-light); color: var(--primary);">
+            <strong style="font-size: 1.3rem;">01</strong>
+          </div>
+          <h3 class="feature-title">Phase 1: Deep Tech Foundation</h3>
+          <p class="feature-desc">Master core languages (Java, Python, C++), Database Design, Data Structures & Algorithms, and System Architecture with live coding.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper" style="background: var(--accent-light); color: var(--accent);">
+            <strong style="font-size: 1.3rem;">02</strong>
+          </div>
+          <h3 class="feature-title">Phase 2: Live Portfolio Projects</h3>
+          <p class="feature-desc">Build commercial full-stack applications with Microservices, Spring Boot, React, and deployment on Cloud platforms with GitHub integration.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper" style="background: var(--warning-light); color: var(--warning);">
+            <strong style="font-size: 1.3rem;">03</strong>
+          </div>
+          <h3 class="feature-title">Phase 3: Aptitude & ATS Resume</h3>
+          <p class="feature-desc">Solve company-specific aptitude papers (TCS NQT, Infosys InfyTq), optimize your ATS resume score, and polish your LinkedIn profile.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper" style="background: var(--success-light); color: var(--success);">
+            <strong style="font-size: 1.3rem;">04</strong>
+          </div>
+          <h3 class="feature-title">Phase 4: Mock Interviews & Drives</h3>
+          <p class="feature-desc">Engage in 1-on-1 technical and HR mock rounds with hiring managers followed by direct referrals into top company placement drives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hiring Partner Network Grid -->
+  <section class="section-padding" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-handshake"></i> Corporate Network</span>
+        <h2 class="section-title">Our Top Hiring Partners</h2>
+        <p class="section-desc">Sample IT MNCs and product enterprises hiring our trained candidates.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.25rem;">
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">TCS</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Infosys</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Wipro</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Capgemini</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Accenture</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Cognizant</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Tech Mahindra</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Persistent</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">LTI Mindtree</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Atos Syntel</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Zensar Tech</div>
+        <div class="recruiter-chip" style="padding: 1.5rem 1rem;">Hexaware</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories Grid -->
+  <section class="section-padding" style="background: var(--bg-body);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-star"></i> Alumni Triumph</span>
+        <h2 class="section-title">Student Placement Stories</h2>
+        <p class="section-desc">Real stories of determination, skill building, and successful IT career transitions.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <span class="badge badge-success">Placed at TCS</span>
+            <strong style="color: var(--primary); font-size: 1.1rem;">₹7.5 LPA</strong>
+          </div>
+          <p class="testimonial-text">
+            "Coming from a Mechanical Engineering background, I had zero coding knowledge. TKA's Java Full Stack course and step-by-step guidance enabled me to crack TCS Digital!"
+          </p>
+          <div class="student-info">
+            <div class="student-avatar" style="background: var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700;">AP</div>
+            <div class="student-details">
+              <h5>Aditya Patil</h5>
+              <p>System Engineer - TCS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <span class="badge badge-success">Placed at Infosys</span>
+            <strong style="color: var(--primary); font-size: 1.1rem;">₹6.8 LPA</strong>
+          </div>
+          <p class="testimonial-text">
+            "The daily Aptitude test practice and 1-on-1 mock interview feedback gave me the exact edge needed during campus recruitment drives."
+          </p>
+          <div class="student-info">
+            <div class="student-avatar" style="background: var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700;">SK</div>
+            <div class="student-details">
+              <h5>Sneha Kulkarni</h5>
+              <p>Specialist Programmer - Infosys</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <span class="badge badge-success">Placed at Capgemini</span>
+            <strong style="color: var(--primary); font-size: 1.1rem;">₹8.0 LPA</strong>
+          </div>
+          <p class="testimonial-text">
+            "TKA placement team continuously shared interview calls until I secured my dream role. I am deeply thankful to Kiran Sir and mentors!"
+          </p>
+          <div class="student-info">
+            <div class="student-avatar" style="background: var(--success); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700;">VR</div>
+            <div class="student-details">
+              <h5>Vikram Rao</h5>
+              <p>Senior Software Analyst - Capgemini</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon-box">TKA</div>
+            <div class="logo-text" style="color: #fff;">The Kiran <span>Academy</span></div>
+          </a>
+          <p class="footer-brand-desc">
+            Empowering tech careers through expert mentorship & placement support.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Pages</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="internships.html">Internships</a>
+            <a href="placements.html">Placements</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Preparation</h4>
+          <div class="footer-links">
+            <a href="mock-tests.html">Mock Test Series</a>
+            <a href="dashboard.html">Student Portal</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Campus</h4>
+          <div class="footer-links" style="font-size: 0.85rem;">
+            <div>Karve Nagar, Pune, MS 411052</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Kiran Academy (TKA). All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function openResourceModal() {
+      const modalHtml = `
+        <div class="modal-backdrop active" id="resourceModal">
+          <div class="modal-dialog">
+            <div class="modal-header">
+              <h3 class="modal-title">TKA Placement Preparation Checklist</h3>
+              <button class="modal-close" onclick="document.getElementById('resourceModal').remove()">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+                <label style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem;">
+                  <input type="checkbox" checked disabled> Master Core Java / Python OOPs principles & Collection framework
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem;">
+                  <input type="checkbox" checked disabled> Solve 100+ LeetCode / GeeksForGeeks Data Structure problems
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem;">
+                  <input type="checkbox" checked disabled> Complete 2 full-stack projects with live deployment links
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem;">
+                  <input type="checkbox" checked disabled> Generate ATS-friendly 1-page resume with optimized tech keywords
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem;">
+                  <input type="checkbox" checked disabled> Complete 5 mock tests & 2 technical mock interviews
+                </label>
+              </div>
+
+              <div style="margin-top: 1.5rem; text-align: center;">
+                <button onclick="showToast('Downloading TKA Placement Guide PDF...', 'success'); document.getElementById('resourceModal').remove();" class="btn btn-primary btn-block">
+                  <i class="fa-solid fa-download"></i> Download Preparation Guide (PDF Demo)
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      document.body.insertAdjacentHTML('beforeend', modalHtml);
+    }
+  </script>
+</body>
+</html>
